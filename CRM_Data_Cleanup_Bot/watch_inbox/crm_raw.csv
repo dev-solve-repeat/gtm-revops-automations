@@ -1,0 +1,26 @@
+First Name,Last Name,Email,Phone,Company,Job Title,City,Country,Lead Status
+Arjun,Mehta,arjun.mehta@techwave.io,+1-415-555-0101,Techwave Inc,VP of Mktg,San Francisco,USA,New
+ARJUN,MEHTA,Arjun.Mehta@TechWave.IO,+1-415-555-0101,techwave inc,VP Marketing,San Francisco,United States,New
+Sarah,Johnson,sarah.johnson@quantumleap.com,+1-212-555-0202,Quantum Leap,Dir of Sales,New York,USA,Contacted
+Sarah,Johnson,sarah.johnson@quantumleap.com,,Quantum Leap,Director Sales,New York,USA,Contacted
+Marcus,Fontaine,m.fontaine@globaledge.co,+44-20-7946-0301,Global Edge,SVP Eng,London,UK,Qualified
+,Fontaine,m.fontaine@globaledge.co,+44-20-7946-0301,Global Edge,SVP Engineering,London,UK,Qualified
+Priya,Sharma,priya.sharma@nexuscloud.ai,+1-650-555-0404,Nexus Cloud AI,Head of Prod,Palo Alto,USA,New
+Priya,Sharma,,+1-650-555-0499,Nexus Cloud AI,Head of Product,Palo Alto,USA,New
+Kevin,Lee,klee@brightmind.io,+1-512-555-0505,BrightMind,,Austin,USA,New
+Kevin,Lee,klee@brightmind.io,+1-512-555-0505,BrightMind,SDR,Austin,USA,Contacted
+Amara,Osei,amara.osei@venturepath.com,+1-404-555-0606,VenturePath,CRO,Atlanta,USA,Qualified
+Yuki,Tanaka,yuki.tanaka@sakuratech.jp,+81-3-5555-0707,Sakura Tech,Mgr of Ops,Tokyo,Japan,New
+Yuki,Tanaka,yuki.tanaka@sakuratech.jp,,Sakura Tech,Operations Manager,Tokyo,Japan,Contacted
+Elena,Vasquez,elena.vasquez@solarpeak.mx,+52-55-5555-0808,SolarPeak,VP - Biz Dev,Mexico City,Mexico,New
+Elena,Vasquez,e.vasquez@solarpeak.mx,+52-55-5555-0808,SolarPeak,Vice President Business Development,Mexico City,MX,New
+,,,,,,,USA,New
+Tom,Richards,info@acmecorp.com,+1-303-555-0909,Acme Corp,Dir of Mktg,Denver,USA,New
+Divya,Nair,divya.nair@brightfuture.in,+91-98-5555-1010,Bright Future Ltd,Assoc Dir of Ops,Bangalore,India,New
+James,Wu,j.wu@,+1-713-555-1111,Energize Co,EVP Sales,Houston,USA,Qualified
+Lucia,Fernandez,lucia.fernandez@latinotech.com,,LatinoTech,Sr. Mgr of CS,Miami,USA,New
+Alex,Kim,alex.kim@growthstack.io,+1-206-555-1212,GrowthStack,AE,,USA,New
+alex,kim,alex.kim@growthstack.io,+1-206-555-1212,growthstack,Account Executive,Seattle,USA,New
+,Williams,sam.williams@cloudbridge.net,+1-617-555-1313,CloudBridge,CTO,Boston,USA,Qualified
+Frank,Chen,frank.chen@datastream.io,+1-949-555-1414,DataStream,V.P. of Eng,Irvine,USA,New
+Nomsa,Dlamini,nomsa.dlamini@afritech.co.za,+27-11-555-1515,AfriTech,BDR,Johannesburg,South Africa,New

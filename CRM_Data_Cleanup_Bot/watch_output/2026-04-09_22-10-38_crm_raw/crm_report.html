@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CRM Cleaner Report — 2026-04-09 22:10:38</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    max-width: 1140px; margin: 40px auto; padding: 0 20px;
+    color: #111827; background: #f8fafc;
+  }
+  h1 { color: #1d4ed8; margin-bottom: 4px; font-size: 1.8rem; }
+  .meta { color: #6b7280; font-size: .88rem; margin-bottom: 28px; }
+  h2 {
+    color: #1f2937; font-size: 1.1rem; font-weight: 600;
+    border-bottom: 2px solid #e5e7eb; padding-bottom: 8px; margin-top: 40px;
+  }
+  .stats { display: flex; gap: 14px; flex-wrap: wrap; margin: 20px 0 30px; }
+  .card {
+    background: #fff; border: 1px solid #e5e7eb; border-radius: 10px;
+    padding: 16px 22px; min-width: 130px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06);
+  }
+  .card .num { font-size: 2rem; font-weight: 700; color: #1d4ed8; line-height: 1; }
+  .card .lbl { font-size: .75rem; color: #6b7280; margin-top: 5px; }
+  .table-wrap {
+    overflow-x: auto; background: #fff; border-radius: 8px;
+    border: 1px solid #e5e7eb; box-shadow: 0 1px 2px rgba(0,0,0,.04);
+  }
+  table.table { width: 100%; border-collapse: collapse; font-size: .81rem; }
+  table.table th {
+    background: #f3f4f6; padding: 9px 12px; text-align: left;
+    border-bottom: 1px solid #e5e7eb; white-space: nowrap; font-weight: 600;
+  }
+  table.table td { padding: 8px 12px; border-bottom: 1px solid #f3f4f6; }
+  table.table tr:last-child td { border-bottom: none; }
+  table.table tr:hover td { background: #fafafa; }
+  .libs { font-size: .78rem; color: #6b7280; margin-top: -18px; margin-bottom: 28px; }
+  footer { margin-top: 52px; font-size: .76rem; color: #9ca3af; text-align: center; }
+</style>
+</head>
+<body>
+<h1>CRM Data Cleaner — Report</h1>
+<div class="meta">
+  Generated: <strong>2026-04-09 22:10:38</strong> &nbsp;|&nbsp;
+  Source file: <strong>crm_raw.csv</strong> &nbsp;|&nbsp;
+  CRM type detected: <strong>Hubspot</strong>
+</div>
+
+<h2>Summary</h2>
+<div class="stats">
+  <div class="card"><div class="num">25</div><div class="lbl">Raw records loaded</div></div>
+  <div class="card"><div class="num">13</div><div class="lbl">Clean records</div></div>
+  <div class="card"><div class="num">4</div><div class="lbl">Flagged for review</div></div>
+  <div class="card"><div class="num">8</div><div class="lbl">Duplicates removed</div></div>
+  <div class="card"><div class="num">18</div><div class="lbl">Titles standardised</div></div>
+</div>
+<p class="libs">Optional libraries active: rapidfuzz (fuzzy dedup), phonenumbers (E.164 normalisation)</p>
+
+<h2>Clean Records
+  <small style="font-weight:400;color:#6b7280;font-size:.82rem">
+    — first 5 of 13
+  </small>
+</h2>
+<div class="table-wrap"><table class="dataframe table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>first_name</th>
+      <th>last_name</th>
+      <th>email</th>
+      <th>phone</th>
+      <th>company</th>
+      <th>job_title</th>
+      <th>city</th>
+      <th>country</th>
+      <th>lead_status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Arjun</td>
+      <td>Mehta</td>
+      <td>arjun.mehta@techwave.io</td>
+      <td>+14155550101</td>
+      <td>Techwave Inc</td>
+      <td>Vice President of Marketing</td>
+      <td>San Francisco</td>
+      <td>United States</td>
+      <td>New</td>
+    </tr>
+    <tr>
+      <td>Sarah</td>
+      <td>Johnson</td>
+      <td>sarah.johnson@quantumleap.com</td>
+      <td>+12125550202</td>
+      <td>Quantum Leap</td>
+      <td>Director of Sales</td>
+      <td>New York</td>
+      <td>United States</td>
+      <td>Contacted</td>
+    </tr>
+    <tr>
+      <td>Marcus</td>
+      <td>Fontaine</td>
+      <td>m.fontaine@globaledge.co</td>
+      <td>+442079460301</td>
+      <td>Global Edge</td>
+      <td>Senior Vice President Engineering</td>
+      <td>London</td>
+      <td>United Kingdom</td>
+      <td>Qualified</td>
+    </tr>
+    <tr>
+      <td>Priya</td>
+      <td>Sharma</td>
+      <td>priya.sharma@nexuscloud.ai</td>
+      <td>+16505550404</td>
+      <td>Nexus Cloud Ai</td>
+      <td>Head of Product</td>
+      <td>Palo Alto</td>
+      <td>United States</td>
+      <td>New</td>
+    </tr>
+    <tr>
+      <td>Kevin</td>
+      <td>Lee</td>
+      <td>klee@brightmind.io</td>
+      <td>+15125550505</td>
+      <td>Brightmind</td>
+      <td>Sales Development Representative</td>
+      <td>Austin</td>
+      <td>United States</td>
+      <td>Contacted</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<h2>Flagged for Review
+  <small style="font-weight:400;color:#6b7280;font-size:.82rem">
+    — first 5 of 4
+  </small>
+</h2>
+<div class="table-wrap"><table class="dataframe table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>first_name</th>
+      <th>last_name</th>
+      <th>email</th>
+      <th>phone</th>
+      <th>company</th>
+      <th>job_title</th>
+      <th>city</th>
+      <th>country</th>
+      <th>lead_status</th>
+      <th>_flag_reasons</th>
+      <th>_quality_score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tom</td>
+      <td>Richards</td>
+      <td>info@acmecorp.com</td>
+      <td>+13035550909</td>
+      <td>Acme Corp</td>
+      <td>Director of Marketing</td>
+      <td>Denver</td>
+      <td>United States</td>
+      <td>New</td>
+      <td>Generic/role-based email: info@acmecorp.com</td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <td>James</td>
+      <td>Wu</td>
+      <td>j.wu@</td>
+      <td>+17135551111</td>
+      <td>Energize Co</td>
+      <td>Executive Vice President Sales</td>
+      <td>Houston</td>
+      <td>United States</td>
+      <td>Qualified</td>
+      <td>Invalid email format: j.wu@</td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <td>—</td>
+      <td>Williams</td>
+      <td>sam.williams@cloudbridge.net</td>
+      <td>+16175551313</td>
+      <td>Cloudbridge</td>
+      <td>Chief Technology Officer</td>
+      <td>Boston</td>
+      <td>United States</td>
+      <td>Qualified</td>
+      <td>Missing First Name</td>
+      <td>70</td>
+    </tr>
+    <tr>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td></td>
+      <td>—</td>
+      <td>—</td>
+      <td>United States</td>
+      <td>New</td>
+      <td>Missing First Name; Missing Last Name; Missing Email; Missing Company; Low quality score (10/100)</td>
+      <td>10</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<h2>Duplicates Removed
+  <small style="font-weight:400;color:#6b7280;font-size:.82rem">
+    — first 5 of 8
+  </small>
+</h2>
+<div class="table-wrap"><table class="dataframe table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>first_name</th>
+      <th>last_name</th>
+      <th>email</th>
+      <th>phone</th>
+      <th>company</th>
+      <th>job_title</th>
+      <th>city</th>
+      <th>country</th>
+      <th>lead_status</th>
+      <th>_duplicate_of</th>
+      <th>_duplicate_reason</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Arjun</td>
+      <td>Mehta</td>
+      <td>arjun.mehta@techwave.io</td>
+      <td>+14155550101</td>
+      <td>Techwave Inc</td>
+      <td>Vice President Marketing</td>
+      <td>San Francisco</td>
+      <td>United States</td>
+      <td>New</td>
+      <td>arjun.mehta@techwave.io</td>
+      <td>Duplicate email</td>
+    </tr>
+    <tr>
+      <td>Sarah</td>
+      <td>Johnson</td>
+      <td>sarah.johnson@quantumleap.com</td>
+      <td>—</td>
+      <td>Quantum Leap</td>
+      <td>Director Sales</td>
+      <td>New York</td>
+      <td>United States</td>
+      <td>Contacted</td>
+      <td>sarah.johnson@quantumleap.com</td>
+      <td>Duplicate email</td>
+    </tr>
+    <tr>
+      <td>—</td>
+      <td>Fontaine</td>
+      <td>m.fontaine@globaledge.co</td>
+      <td>+442079460301</td>
+      <td>Global Edge</td>
+      <td>Senior Vice President Engineering</td>
+      <td>London</td>
+      <td>United Kingdom</td>
+      <td>Qualified</td>
+      <td>m.fontaine@globaledge.co</td>
+      <td>Duplicate email</td>
+    </tr>
+    <tr>
+      <td>Kevin</td>
+      <td>Lee</td>
+      <td>klee@brightmind.io</td>
+      <td>+15125550505</td>
+      <td>Brightmind</td>
+      <td>—</td>
+      <td>Austin</td>
+      <td>United States</td>
+      <td>New</td>
+      <td>klee@brightmind.io</td>
+      <td>Duplicate email</td>
+    </tr>
+    <tr>
+      <td>Yuki</td>
+      <td>Tanaka</td>
+      <td>yuki.tanaka@sakuratech.jp</td>
+      <td>—</td>
+      <td>Sakura Tech</td>
+      <td>Operations Manager</td>
+      <td>Tokyo</td>
+      <td>Japan</td>
+      <td>Contacted</td>
+      <td>yuki.tanaka@sakuratech.jp</td>
+      <td>Duplicate email</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<footer>Generated by CRM Data Cleaner &nbsp;·&nbsp; 2026-04-09 22:10:38</footer>
+</body>
+</html>

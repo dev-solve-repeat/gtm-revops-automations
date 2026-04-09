@@ -1,0 +1,9 @@
+# CRM Data Cleaner — Python dependencies
+# Install with: pip install -r requirements.txt
+
+pandas>=2.0          # core data manipulation
+openpyxl>=3.1        # Excel (.xlsx) read/write support
+rapidfuzz>=3.0       # fuzzy near-duplicate detection (optional but recommended)
+phonenumbers>=8.0    # E.164 phone number normalisation (optional but recommended)
+streamlit>=1.30      # browser UI (only needed if running app.py)
+watchdog>=4.0        # folder watcher (only needed if running folder_watcher.py)
